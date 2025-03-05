@@ -1,0 +1,48 @@
+@use '../globals/variables' as *;
+@use '../globals/mixins';
+
+.middle-panel {
+  flex: 1;
+  background: #fff;
+  padding: 16px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  margin-right: 16px;
+}
+
+.main-title {
+  margin-top: 0;
+  font-size: 1.4em;
+  margin-bottom: 16px;
+}
+
+.unit-info {
+  margin-bottom: 16px;
+}
+
+.unit-info label {
+  margin-right: 20px;
+  font-size: 1em;
+}
+
+.info-input {
+  margin-left: 8px;
+  padding: 4px;
+  border: 1px solid #ced4da;
+  border-radius: 4px;
+  font-size: 1em;
+}
+
+.save-button {
+  padding: 4px 8px;
+  font-size: 1em;
+  border: 1px solid #ced4da;
+  border-radius: 4px;
+  background: #e9ecef;
+  cursor: pointer;
+  @include mixins.transition(background, 0.2s);
+}
+
+.save-button:hover {
+  background: #dfe4ea;
+}

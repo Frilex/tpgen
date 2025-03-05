@@ -1,0 +1,10 @@
+@use '../globals/variables' as *;
+@use '../globals/mixins';
+
+.app-container {
+  display: flex;
+  padding: 20px;
+  max-width: 1400px;
+  margin: auto;
+  font-family: $font-family;
+}

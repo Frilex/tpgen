@@ -1,0 +1,29 @@
+@use '../globals/variables' as *;
+@use '../globals/mixins';
+
+.right-panel {
+    width: 250px;
+    padding: 8px;
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    margin-right: 16px;
+    margin-top: 16px;
+
+}
+
+.sidebar-item {
+  padding: 10px;
+  margin-bottom: 10px;
+  background: #e9ecef;
+  border: 1px solid #ced4da;
+  border-radius: 4px;
+  cursor: grab;
+  @include mixins.transition(background, 0.2s);
+  @include mixins.transition(transform, 0.2s);
+}
+
+.sidebar-item:hover {
+  background: #dfe4ea;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}

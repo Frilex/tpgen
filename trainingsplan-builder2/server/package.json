@@ -1,0 +1,16 @@
+{
+  "name": "server",
+  "version": "1.0.0",
+  "private": true,
+  "dependencies": {
+    "better-sqlite3": "^11.8.1",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "my-project": "file:..",
+    "server": "file:",
+    "sqlite3": "^5.0.0"
+  },
+  "scripts": {
+    "start": "node server.js"
+  }
+}

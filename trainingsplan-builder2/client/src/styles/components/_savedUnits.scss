@@ -1,0 +1,68 @@
+@use '../globals/variables' as *;
+@use '../globals/mixins';
+
+.saved-units {
+  width: 300px;
+  margin-bottom: 16px;
+  padding: 8px;
+  border: 1px solid #adb5bd;
+  border-radius: 4px;
+  background: #f8f9fa;
+}
+
+.saved-units h4 {
+  margin: 0 0 8px 0;
+  font-size: 1em;
+}
+
+.search-input {
+  width: 280px;
+  padding: 4px;
+  margin-bottom: 8px;
+  border: 1px solid #ced4da;
+  border-radius: 4px;
+  font-size: 0.9em;
+}
+
+.unit-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.unit-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 4px 0;
+  font-size: 0.9em;
+}
+
+.load-button {
+  padding: 4px 8px;
+  font-size: 0.9em;
+  border: 1px solid #ced4da;
+  border-radius: 4px;
+  background: #e9ecef;
+  cursor: pointer;
+  @include mixins.transition(background, 0.2s);
+  margin-right: 4px;
+}
+
+.load-button:hover {
+  background: #dfe4ea;
+}
+
+.delete-button {
+  padding: 4px 8px;
+  font-size: 0.9em;
+  border: 1px solid #dc3545;
+  border-radius: 4px;
+  background: #f8d7da;
+  cursor: pointer;
+  @include mixins.transition(background, 0.2s);
+}
+
+.delete-button:hover {
+  background: #f1c0c0;
+}
